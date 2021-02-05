@@ -41,6 +41,18 @@ resources:
     cpu: 100m
     memory: 128Mi
 
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: 8081
+  initialDelaySeconds: 15
+  periodSeconds: 20
+readinessProbe:
+  httpGet:
+    path: /readyz
+    port: 8081
+  initialDelaySeconds: 5
+
 nodeSelector: {}
 
 tolerations: []
