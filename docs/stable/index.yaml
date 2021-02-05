@@ -3,7 +3,17 @@ entries:
   consul-merge-controller:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2021-02-05T17:52:24.929377+02:00"
+    created: "2021-02-05T18:00:34.783537+02:00"
+    description: A Helm chart for the consul-merge-controller
+    digest: 8120cab0969b7e064968d46dc7767ed5b2a7bf850407431a99097847e8b87551
+    name: consul-merge-controller
+    type: application
+    urls:
+    - consul-merge-controller/consul-merge-controller-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2021-02-05T18:00:34.782486+02:00"
     description: A Helm chart for the consul-merge-controller
     digest: 363dd0dce445cc4b8f0eba5607921dc4f35ab5140aca832d495e9b04bfef09a1
     name: consul-merge-controller
@@ -11,4 +21,4 @@ entries:
     urls:
     - consul-merge-controller/consul-merge-controller-0.0.1.tgz
     version: 0.0.1
-generated: "2021-02-05T17:52:24.928417+02:00"
+generated: "2021-02-05T18:00:34.781123+02:00"
