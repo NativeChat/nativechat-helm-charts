@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  consul-merge-controller:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2021-02-05T17:43:28.467404+02:00"
+    description: A Helm chart for the consul-merge-controller
+    digest: 575ed372a492af421c80eeecb92ebd7727a6e45fc6db311c0b08f239d2189df4
+    name: consul-merge-controller
+    type: application
+    urls:
+    - consul-merge-controller/consul-merge-controller-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-02-05T17:43:28.466709+02:00"
