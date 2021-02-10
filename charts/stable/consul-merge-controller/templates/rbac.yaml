@@ -1,0 +1,76 @@
+{{- if .Values.rbac.create }}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ template "consul-merge-controller.fullname" . }}-role
+  labels:
+    {{- include "consul-merge-controller.labels" . | nindent 4 }}
+rules:
+- apiGroups:
+  - consul.hashicorp.com
+  resources:
+  - servicerouters
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - consul.hashicorp.com
+  resources:
+  - servicerouters/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - consul.hashicorp.com
+  resources:
+  - servicerouters/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - service.consul.k8s.nativechat.com
+  resources:
+  - consulserviceroutes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - service.consul.k8s.nativechat.com
+  resources:
+  - consulserviceroutes/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - service.consul.k8s.nativechat.com
+  resources:
+  - consulserviceroutes/status
+  verbs:
+  - get
+  - patch
+  - update
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ template "consul-merge-controller.fullname" . }}-rolebinding
+  labels:
+    {{- include "consul-merge-controller.labels" . | nindent 4 }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ template "consul-merge-controller.fullname" . }}-role
+subjects:
+- kind: ServiceAccount
+  name: {{ template "consul-merge-controller.serviceAccountName" . }}
+  namespace: {{ .Release.Namespace }}
+{{- end }}
