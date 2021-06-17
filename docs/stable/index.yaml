@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   consul-merge-controller:
   - apiVersion: v2
+    appVersion: 0.3.0
+    created: "2021-06-17T16:43:36.086433+03:00"
+    description: A Helm chart for the consul-merge-controller
+    digest: 44155cb379ab70bf909229649d83ca00fb2754ca230e55a9aeb40e28e7895470
+    name: consul-merge-controller
+    type: application
+    urls:
+    - consul-merge-controller/consul-merge-controller-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-03-16T09:09:53.604873+02:00"
+    created: "2021-06-17T16:43:36.08567+03:00"
     description: A Helm chart for the consul-merge-controller
     digest: 17479862eca1759c9f43e9b8bae02b10b9ca47ee3a594a0c67ce5072d0161f51
     name: consul-merge-controller
@@ -13,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2021-03-16T09:09:53.604267+02:00"
+    created: "2021-06-17T16:43:36.083907+03:00"
     description: A Helm chart for the consul-merge-controller
     digest: 32220b280f93b27dd6ee327574c4a58c3a2ab5f2e6f4969b90a79472206932bc
     name: consul-merge-controller
@@ -23,7 +33,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-03-16T09:09:53.602865+02:00"
+    created: "2021-06-17T16:43:36.082282+03:00"
     description: A Helm chart for the consul-merge-controller
     digest: 4eea42943bc479872f5ee443d07def1842d41a75a245c2f89e6eab8c69748a96
     name: consul-merge-controller
@@ -33,7 +43,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2021-03-16T09:09:53.602018+02:00"
+    created: "2021-06-17T16:43:36.079525+03:00"
     description: A Helm chart for the consul-merge-controller
     digest: 32ae954cf1c7370c645b81ff07fd174801e74ee07a7e7ec4c373f738372e8e2f
     name: consul-merge-controller
@@ -41,4 +51,4 @@ entries:
     urls:
     - consul-merge-controller/consul-merge-controller-0.0.1.tgz
     version: 0.0.1
-generated: "2021-03-16T09:09:53.600848+02:00"
+generated: "2021-06-17T16:43:36.078352+03:00"
