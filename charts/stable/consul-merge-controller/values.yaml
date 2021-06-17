@@ -2,7 +2,7 @@ image:
   repository: nchatsystem/consul-merge-controller
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart version.
-  tag: v0.2.0
+  tag: v0.3.0
 
 imagePullSecrets: []
 nameOverride: ""
