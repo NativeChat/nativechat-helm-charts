@@ -2,7 +2,7 @@ image:
   repository: nchatsystem/consul-merge-controller
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart version.
-  tag: v0.4.0
+  tag: v0.5.0
 
 imagePullSecrets: []
 nameOverride: ""
@@ -22,10 +22,12 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext: {}
+podSecurityContext:
+  {}
   # fsGroup: 2000
 
-securityContext: {}
+securityContext:
+  {}
   # capabilities:
   #   drop:
   #   - ALL
